@@ -1,16 +1,16 @@
-# 📝 Gerador de Artigos para WordPress com IA
+# Gerador de Artigos para WordPress com IA
 
 Sistema completo de geração de artigos para WordPress utilizando Inteligência Artificial através da API da OpenAI. Permite criar artigos otimizados para SEO de forma rápida e eficiente.
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-- ✅ **Autenticação Completa**: Sistema de registro e login com JWT
-- ✅ **Geração de Artigos com IA**: Criação automática de artigos utilizando OpenAI GPT
-- ✅ **Gerenciamento de Artigos**: Visualize, edite e exclua seus artigos
-- ✅ **Interface Moderna**: Design limpo e responsivo com Bootstrap 5
-- ✅ **Banco de Dados SQLite**: Armazenamento local para testes (fácil migração)
+-  **Autenticação Completa**: Sistema de registro e login com JWT
+-  **Geração de Artigos com IA**: Criação automática de artigos utilizando OpenAI GPT
+-  **Gerenciamento de Artigos**: Visualize, edite e exclua seus artigos
+-  **Interface Moderna**: Design limpo e responsivo com Bootstrap 5
+-  **Banco de Dados SQLite**: Armazenamento local para testes (fácil migração)
 
-## 🛠️ Stack Tecnológica
+##  Stack Tecnológica
 
 ### Backend
 - **Node.js** + **Express** - Servidor REST API
@@ -25,13 +25,13 @@ Sistema completo de geração de artigos para WordPress utilizando Inteligência
 - **React Router** - Navegação entre páginas
 - **Axios** - Comunicação com API
 
-## 📋 Pré-requisitos
+##  Pré-requisitos
 
 - Node.js (versão 16 ou superior)
 - npm ou yarn
-- Conta na OpenAI com API Key ([obter aqui](https://platform.openai.com/api-keys))
+- Conta na OpenAI com API Key
 
-## ⚙️ Instalação
+##  Instalação
 
 ### 1. Clone o repositório
 ```bash
@@ -67,7 +67,7 @@ OPENAI_API_KEY=sua_chave_da_openai_aqui
 DB_PATH=./database/articles.db
 ```
 
-**⚠️ IMPORTANTE:**
+** IMPORTANTE:**
 - Gere uma chave JWT_SECRET aleatória e segura
 - Obtenha sua chave da OpenAI em: https://platform.openai.com/api-keys
 - Nunca compartilhe ou commite o arquivo `.env`
@@ -92,7 +92,7 @@ npm run server
 npm run client
 ```
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 article_generator/
@@ -115,15 +115,15 @@ article_generator/
 └── .env                     # Variáveis de ambiente (não commitado)
 ```
 
-## 🔐 Segurança
+##  Segurança
 
-- ✅ Senhas são criptografadas com bcrypt
-- ✅ Autenticação JWT para proteger rotas
-- ✅ Variáveis sensíveis em `.env` (não commitado)
-- ✅ Validação de entrada nos endpoints
-- ✅ Middleware de autenticação em rotas protegidas
+-  Senhas são criptografadas com bcrypt
+-  Autenticação JWT para proteger rotas
+-  Variáveis sensíveis em `.env` (não commitado)
+-  Validação de entrada nos endpoints
+-  Middleware de autenticação em rotas protegidas
 
-## 📚 API Endpoints
+##  API Endpoints
 
 ### Autenticação
 - `POST /api/auth/register` - Registrar novo usuário
@@ -136,14 +136,14 @@ article_generator/
 - `PUT /api/articles/:id` - Atualizar artigo
 - `DELETE /api/articles/:id` - Excluir artigo
 
-## 🎯 Como Usar
+##  Como Usar
 
 1. **Crie uma conta**: Acesse http://localhost:3000 e registre-se
 2. **Faça login**: Entre com suas credenciais
 3. **Gere artigos**: Vá em "Gerar Artigo" e informe o tópico desejado
 4. **Gerencie artigos**: Visualize e edite seus artigos em "Meus Artigos"
 
-## 🔧 Scripts Disponíveis
+##  Scripts Disponíveis
 
 ```bash
 npm run dev          # Inicia backend e frontend simultaneamente
@@ -151,46 +151,3 @@ npm run server       # Inicia apenas o backend
 npm run client       # Inicia apenas o frontend
 npm run install-all  # Instala todas as dependências
 ```
-
-## 🚧 Próximos Passos / Roadmap
-
-- [ ] Migração para banco de dados de produção (PostgreSQL/MySQL)
-- [ ] Integração com WordPress via API REST
-- [ ] Editor de artigos em tempo real
-- [ ] Histórico e versionamento de artigos
-- [ ] Exportação para diferentes formatos (Word, PDF, HTML)
-- [ ] Suporte a múltiplos modelos de IA
-- [ ] Sistema de templates de artigos
-- [ ] Estatísticas e analytics
-
-## 🐛 Solução de Problemas
-
-### Erro: "OPENAI_API_KEY não configurada"
-- Verifique se o arquivo `.env` existe e contém `OPENAI_API_KEY=sua_chave`
-
-### Erro: "Quota da OpenAI excedida"
-- Verifique seus créditos em: https://platform.openai.com/account/billing
-- Adicione créditos ou aguarde o reset da quota
-
-### Erro: "Porta já em uso"
-- Altere a porta no arquivo `.env` ou encerre o processo que está usando a porta
-
-### Token inválido ou expirado
-- Faça logout e login novamente
-- Se persistir, limpe o localStorage do navegador
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
-
-## 📧 Suporte
-
-Para dúvidas ou problemas, abra uma issue no repositório.
-
----
-
-Desenvolvido com ❤️ para facilitar a criação de conteúdo para WordPress
